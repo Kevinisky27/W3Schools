@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Output - By Kevin A.</title>
+  <meta name="description" content="Tutorial JS Output, Facultad de Ingeniería en Sistemas de la Universidad Mariano Gálvez de Guatemala">
+</head>
+<body>
+  <!-- JavaScript Output -->
+  <h1 id="title"></h1>
+
+  <!-- Se puede realizar una suma de esta manera, pero lo redirije a otra pantalla -->
+  <button type="button" onClick="document.write(5 + 6)"> Realizar suma</button>
+  <button type="button" onclick="windows.print()">Imprimir mensaje</button>
+
+  <!-- Para este ejemplo ocuparemos JS desde una página -->
+  <script>
+    document.getElementById("title").innerHTML = "Título desde JavaScript"
+
+    // let nombre = prompt("Ingrese su nombre: ")
+    // document.getElementById("saludo").innerHTML = "Bienvenido, " + nombre
+
+    /* Utilizando window.alert() */
+    window.alert(3*(5 + 1))
+    // alert(15 * 2) // tambien se puede de esta misma manera
+  
+    /* JavaScript desde la consola (Print)*/
+    let greetingConsole = "Hola, esto unicamente se va a ver en consola"
+    console.log(greetingConsole)
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Introduction - By Kevin A.</title>
+</head>
+<body>
+  <!-- JavaScript Can Change HTML Content-->
+  <h1 id="title"></h1>
+
+  <!-- JavaScript Can Change HTML Attribute Values -->
+  <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on the light</button>
+
+  <img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+
+  <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
+
+  <script>
+    document.getElementById("title").innerHTML = "Hello JavaScript"
+    document.getElementById("title").style.fontSize = "40px"
+    document.getElementById("title").style.display = "" // none no se visualizará 
+  </script>
+</body>
+</html>

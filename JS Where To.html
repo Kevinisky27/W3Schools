@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Where To - By Kevin A.</title>
+  <meta name="description" content="Tutorial JS Where To de W3School">
+
+  <!-- script desde el head -->
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Text from the head ..."
+    }
+  </script>
+</head>
+<body>
+  <!-- En este Tutorial enseña la manera en la cual se puede hacer uso de JavaScript, como lo es de manera interna y externa al archivo HTML. -->
+
+  <!-- The <script> Tag -->
+  <h2>JavaScript in body</h2>
+  <p id="demo"></p>
+  <p id="demoExternal"></p>
+  <button type="button" onclick="myFunction()">Try it</button>
+
+
+  <!-- script desde el body -->
+  <script>
+    document.getElementById("demo").innerHTML = "My First JavaScript"
+  </script>
+
+  <script src="scripts/JS Where To.js"></script>
+  <!-- Otra manera de utilizar JS es desde un archivo en el cual le podamos utilizar por medio de un link -->
+</body>
+</html>
